@@ -1,10 +1,11 @@
 # MCE-RX-ST: A Hybrid Deep Learning Model for Visual Classification in Remote Sensing
 
 # Journal Submission
-
 This research has been submitted for peer review to **_The Visual Computer_** journal under the title:
-
 ## **MCE-RX-ST: A Hybrid Deep Learning Model for Visual Classification in Remote Sensing Using Minimum Cross Entropy, ResNeXt, and Swin Transformer**
+
+## Citation
+[![DOI](https://zenodo.org/badge/933850708.svg)](https://doi.org/10.5281/zenodo.14884749)
 
 ## Overview
 This repository contains the implementation of **MCE-RX-ST**, a hybrid deep learning model integrating:
@@ -77,9 +78,9 @@ The classification accuracy and confusion matrix will be displayed in MATLAB.
 ![Sample Image2](UCMerced-Samples.jpg)
 Sample images from the UC-Merced Land Use Dataset
 The classification accuracy and confusion matrix will be displayed in MATLAB.
-## Contribution
-Feel free to contribute by submitting pull requests or reporting issues.
+## Citation
+[![DOI](https://zenodo.org/badge/933850708.svg)](https://doi.org/10.5281/zenodo.14884749)
 
 ## License
-This project is licensed under the MIT License. See `LICENSE` for details.
+This project is licensed under the MIT License.
 
