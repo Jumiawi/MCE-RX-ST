@@ -42,12 +42,16 @@ This project requires MATLAB. Ensure the following toolboxes are installed:
 - **Image Processing Toolbox**
 - **Statistics and Machine Learning Toolbox**
 - 
-## Datasets This model is trained and evaluated on: 
+## Datasets Used in This model: 
 - **WHU-RS19 Dataset** (Remote sensing images covering 19 classes)
 - **UCMerced Land Use Dataset** (21-class dataset of aerial images)
 - •	[WHU-RS19]( https://huggingface.co/datasets/jonathan-roberts1/WHU-RS19)
 - •	[UCMerced LandUse]( http://weegee.vision.ucmerced.edu/datasets/landuse.html)
-
+## Direct Download WHU-RS19 Dataset: 
+- https://drive.google.com/file/d/1NQ_gchcN96qsHpMWd4e6DS34Gijz2rTW/view?usp=drive_link
+## UCMerced Land Use Dataset: 
+- https://drive.google.com/file/d/1bBBWtNVdp5Kcpmr22uf5a5Wfx2D9Id6O/view?usp=drive_link
+  
 ## Usage
 1. Clone the repository:
    ```bash
@@ -74,10 +78,16 @@ This project requires MATLAB. Ensure the following toolboxes are installed:
 ## Results
 ![Sample Image1](WHU-Samples.jpg)
 Sample images from the WHU-RS19 Dataset 
-The classification accuracy and confusion matrix will be displayed in MATLAB.
+
 ![Sample Image2](UCMerced-Samples.jpg)
 Sample images from the UC-Merced Land Use Dataset
-The classification accuracy and confusion matrix will be displayed in MATLAB.
+
+![Sample Image3](WHU-Results.jpg)
+Results for the WHU-RS19 Dataset Using the MCE-RX-ST 
+
+![Sample Image4](UCMerced-Results.jpg)
+Results for the UC-Merced Land Use Dataset Using the MCE-RX-ST 
+
 ## Citation
 [![DOI](https://zenodo.org/badge/933850708.svg)](https://doi.org/10.5281/zenodo.14884749)
 
