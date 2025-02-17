@@ -71,9 +71,12 @@ This project requires MATLAB. Ensure the following toolboxes are installed:
    - Evaluate classification performance
 
 ## Results
+![Sample Image1](WHU-Samples.jpg)
+Sample images from the WHU-RS19 Dataset 
 The classification accuracy and confusion matrix will be displayed in MATLAB.
-
-
+![Sample Image2](UCMerced-Samples.jpg)
+Sample images from the UC-Merced Land Use Dataset
+The classification accuracy and confusion matrix will be displayed in MATLAB.
 ## Contribution
 Feel free to contribute by submitting pull requests or reporting issues.
 
