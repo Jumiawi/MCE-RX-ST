@@ -9,7 +9,7 @@ This research has been submitted for peer review to **_The Visual Computer_** jo
 
 ## Overview
 This repository contains the implementation of **MCE-RX-ST**, a hybrid deep learning model integrating:
-- **MCET Segmentation** for preprocessing images.
+- **MCET Segmentation** for images mask
 - **Swin Transformer** for extracting deep hierarchical features.
 - **ResNeXt** for learning discriminative representations.
 - **Feature Fusion** for improved classification accuracy.
