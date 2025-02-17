@@ -1,62 +1,76 @@
-# MCE-RX-ST: A Hybrid Deep Learning Model for Visual Classification in Remote Sensing Using Minimum Cross Entropy, ResNeXt, and Swin Transformer
-
-This repository contains the implementation of **MCE-RX-ST**, a hybrid deep learning model that integrates **Minimum Cross Entropy Thresholding (MCET)**, **ResNeXt CNN**, and **Swin Transformer** for remote sensing image classification.
-
-## Journal Submission
-This research has been submitted for peer review to **The Visual Computer** journal under the title:
-
-**MCE-RX-ST: A Hybrid Deep Learning Model for Visual Classification in Remote Sensing Using Minimum Cross Entropy, ResNeXt, and Swin Transformer**
+# MCE-RX-ST: A Hybrid Deep Learning Model for Visual Classification in Remote Sensing
 
 ## Overview
-This model leverages:
-- **MCET-based segmentation masks** (using histogram skewness and Gumbel distribution-based mean estimation)
-- **Deep feature extraction using Swin Transformer and ResNeXt CNN**
-- **Feature fusion combining deep features with MCET masks**
+This repository contains the implementation of **MCE-RX-ST**, a hybrid deep learning model integrating:
+- **MCET Segmentation** for preprocessing images.
+- **Swin Transformer** for extracting deep hierarchical features.
+- **ResNeXt** for learning discriminative representations.
+- **Feature Fusion** for improved classification accuracy.
+- **Classifier** for final classification.
 
-## Repository Structure
+This model is designed for **remote sensing image classification** using datasets **WHURS19** and **UCMerced**.
+
+## Project Structure
 ```
-│── main.m                    % Main script to run the hybrid model
-│── load_datasets.m            % Load WHU-RS19 and UCMerced datasets
-│── compute_MCET_masks.m       % Compute segmentation masks based on MCET
-│── extract_swin_features.m    % Extract features using Swin Transformer
-│── extract_resnext_features.m % Extract features using ResNeXt CNN
-│── apply_histogram_skewness_check.m  % Determine skewness & mean estimation
-│── fuse_feature_maps.m        % Fuse feature maps with MCET masks
-│── train_classifier.m         % Train classifier on combined features
-│── evaluate_model.m           % Evaluate classification performance
-│── adaptiveGumbelMCET.m       % Apply MCET method based on histogram
-│── mingumbelmle.m             % Gumbel minimum estimation function
-│── maxgumbelmle.m             % Gumbel maximum estimation function
-│── plot_confusion_matrix.m    % Function to visualize the confusion matrix
-│── README.md                  % Documentation for the repository
+MCE-RX-ST/
+│── main.m                     # Main script to run the model
+│── load_datasets.m             # Loads the remote sensing datasets
+│── compute_MCET_masks.m        # Computes MCET segmentation masks
+│── extract_swin_features.m     # Extracts features using Swin Transformer
+│── extract_resnext_features.m  # Extracts features using ResNeXt
+│── fuse_feature_maps.m         # Fuses extracted features with segmentation masks
+│── train_classifier.m          # Trains SVM classifier on fused features
+│── plot_confusion_matrix.m     # Plots classification confusion matrix
+│── adaptiveGumbelMCET.m        # MCET segmentation based on Gumbel distribution
+│── swin_transformer_forward.m  # Runs Swin Transformer forward pass
+│── resnext_forward.m           # Runs ResNeXt forward pass
+│── swin_transformer_model.m    # Placeholder for Swin Transformer implementation
+│── resnext_model.m             # Placeholder for ResNeXt implementation
+│── README.md                   # Project documentation
 ```
 
-## Datasets
-This model is trained and evaluated on:
+## Installation & Requirements
+This project requires MATLAB. Ensure the following toolboxes are installed:
+- **Deep Learning Toolbox**
+- **Image Processing Toolbox**
+- **Statistics and Machine Learning Toolbox**
+- 
+## Datasets This model is trained and evaluated on: 
 - **WHU-RS19 Dataset** (Remote sensing images covering 19 classes)
 - **UCMerced Land Use Dataset** (21-class dataset of aerial images)
-•	[WHU-RS19]( https://huggingface.co/datasets/jonathan-roberts1/WHU-RS19)
-•	[UCMerced LandUse]( http://weegee.vision.ucmerced.edu/datasets/landuse.html)
+- •	[WHU-RS19]( https://huggingface.co/datasets/jonathan-roberts1/WHU-RS19)
+- •	[UCMerced LandUse]( http://weegee.vision.ucmerced.edu/datasets/landuse.html)
 
-## Installation & Usage
+## Usage
 1. Clone the repository:
-2. Run the main script:
+   ```bash
+   git clone https://github.com/jumiawi/MCE-RX-ST.git
+   cd MCE-RX-ST
+   ```
+2. Modify dataset paths in `main.m`:
+   ```matlab
+   whu_dir = 'path_to_WHURS19';
+   ucm_dir = 'path_to_UCMerced';
+   ```
+3. Run `main.m` in MATLAB:
    ```matlab
    main
    ```
-
-## Model Evaluation
-- Classification accuracy is computed after training.
-- The confusion matrix is plotted to assess class-wise performance.
+4. The script will:
+   - Load and preprocess datasets
+   - Compute MCET segmentation masks
+   - Extract features using Swin Transformer and ResNeXt
+   - Fuse feature maps
+   - Train an SVM classifier
+   - Evaluate classification performance
 
 ## Results
+The classification accuracy and confusion matrix will be displayed in MATLAB.
 
-![Confusion Matrix1](https://raw.githubusercontent.com/your-username/your-repo/main/confusion_matrix1.png)
-![Sample Image1](images/sample_image1.png)
 
-![Confusion Matrix2](https://raw.githubusercontent.com/your-username/your-repo/main/confusion_matrix2.png)
-![Sample Image2](images/sample_image2.png)
+## Contribution
+Feel free to contribute by submitting pull requests or reporting issues.
 
-## Citation
-If you use this code, please cite our paper once it is accepted for publication in **The Visual Computer** journal.
+## License
+This project is licensed under the MIT License. See `LICENSE` for details.
 
