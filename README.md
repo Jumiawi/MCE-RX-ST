@@ -51,7 +51,14 @@ This project requires MATLAB. Ensure the following toolboxes are installed:
 - https://drive.google.com/file/d/1NQ_gchcN96qsHpMWd4e6DS34Gijz2rTW/view?usp=drive_link
 ## UCMerced Land Use Dataset: 
 - https://drive.google.com/file/d/1bBBWtNVdp5Kcpmr22uf5a5Wfx2D9Id6O/view?usp=drive_link
-  
+
+## Before Usage. How to fix LAPACK/BLAS loading error?
+- Add two environment variables:
+     ```bash
+  setenv('BLAS_VERSION', 'mkl.dll')
+  setenv('LAPACK_VERSION', 'mkl.dll')
+   ```
+
 ## Usage
 1. Clone the repository:
    ```bash
