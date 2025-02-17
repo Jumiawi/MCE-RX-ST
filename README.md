@@ -1,5 +1,11 @@
 # MCE-RX-ST: A Hybrid Deep Learning Model for Visual Classification in Remote Sensing
 
+# Journal Submission
+
+This research has been submitted for peer review to **_The Visual Computer_** journal under the title:
+
+## **MCE-RX-ST: A Hybrid Deep Learning Model for Visual Classification in Remote Sensing Using Minimum Cross Entropy, ResNeXt, and Swin Transformer**
+
 ## Overview
 This repository contains the implementation of **MCE-RX-ST**, a hybrid deep learning model integrating:
 - **MCET Segmentation** for preprocessing images.
