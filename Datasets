@@ -1,5 +1,9 @@
-Download Datasets
-•	WHU-RS19 Dataset (Remote sensing images covering 19 classes)
-•	UCMerced Land Use Dataset (21-class dataset of aerial images)
-•	[WHU-RS19]( https://huggingface.co/datasets/jonathan-roberts1/WHU-RS19)
-•	[UCMerced LandUse]( http://weegee.vision.ucmerced.edu/datasets/landuse.html)
+## Datasets Used in This model: 
+- **WHU-RS19 Dataset** (Remote sensing images covering 19 classes)
+- **UCMerced Land Use Dataset** (21-class dataset of aerial images)
+- •	[WHU-RS19]( https://huggingface.co/datasets/jonathan-roberts1/WHU-RS19)
+- •	[UCMerced LandUse]( http://weegee.vision.ucmerced.edu/datasets/landuse.html)
+## Direct Download WHU-RS19 Dataset: 
+- https://drive.google.com/file/d/1NQ_gchcN96qsHpMWd4e6DS34Gijz2rTW/view?usp=drive_link
+## UCMerced Land Use Dataset: 
+- https://drive.google.com/file/d/1bBBWtNVdp5Kcpmr22uf5a5Wfx2D9Id6O/view?usp=drive_link
